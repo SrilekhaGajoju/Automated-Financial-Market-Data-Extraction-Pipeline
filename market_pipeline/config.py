@@ -13,10 +13,10 @@ import os
 # MySQL connection settings
 # ----------------------------------------------------------------------------
 DB_CONFIG = {
-    "host":     os.getenv("DB_HOST", "127.0.0.1"),
-    "port":     int(os.getenv("DB_PORT", 3306)),
-    "user":     os.getenv("DB_USER", "pipeline_user"),
-    "password": os.getenv("DB_PASSWORD", "PipelinePass@123"),
+    "host":     os.getenv("DB_HOST", "Your connection"),
+    "port":     int(os.getenv("DB_PORT", "Your Port number")),
+    "user":     os.getenv("DB_USER", "User_name"),
+    "password": os.getenv("DB_PASSWORD", "User_password"),
     "database": os.getenv("DB_NAME", "market_data_db"),
 }
 
