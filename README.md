@@ -33,9 +33,13 @@ Want to get started?
 9. View the analytics
 
 Design:
+
 Staging vs. curated tables — raw API data is preserved untouched for audit/reprocessing, separate from the validated table used for analysis.
+
 Repeatable safety over re-inserting — a UNIQUE key on (ticker, trade_date) combined with ON DUPLICATE KEY UPDATE guarantees the pipeline can be safely re-run on a schedule without ever producing duplicate rows.
+
 Rejected data is stored, not dropped — every row that fails validation is logged with a specific reason, so data quality issues are visible and reviewable instead of silently disappearing.
+
 Per-ticker error isolation — a failure fetching or processing one ticker doesn't stop the rest of the batch from completing.
 
 
