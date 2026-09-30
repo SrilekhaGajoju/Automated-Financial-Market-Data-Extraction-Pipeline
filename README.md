@@ -42,5 +42,14 @@ Rejected data is stored, not dropped — every row that fails validation is logg
 
 Per-ticker error isolation — a failure fetching or processing one ticker doesn't stop the rest of the batch from completing.
 
+Results:
+
+
+<img width="585" height="327" alt="Screenshot 2026-09-30 124113" src="https://github.com/user-attachments/assets/e5e8bd23-e274-4441-b3c9-621c38196e61" />
+
+Analytics Report:
+
+
+<img width="996" height="873" alt="Screenshot 2026-09-30 124142" src="https://github.com/user-attachments/assets/671bb969-a834-48f6-a9b0-5517673ab392" />
 
 
